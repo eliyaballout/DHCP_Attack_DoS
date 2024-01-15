@@ -2,14 +2,13 @@ from scapy.all import Ether, IP, UDP, BOOTP, DHCP, sendp, RandMAC, conf
 import os
 
 
-#Chek if the user doesn't run the program with super user privileges
+#Check if the user doesn't run the program with super user privileges
 if os.geteuid() != 0:
     print("\n=========================================================================\n")
     print("\033[1;31mAccess denied, you neet ROOT permissions. Try running the program with sudo.\033[0m")
     exit()
 
 
-#conf.checkIPaddr needs to be set to False. 
 #When conf.checkIpaddr the reponse IP isn't checked against sending IP address. Don't need to match.	
 conf.checkIPaddr = False
 
@@ -33,5 +32,5 @@ try:
     
 except KeyboardInterrupt:
     print("\n\n\033[1;31mStopping the attack!\033[0m")
-    print("\n\033[1mShutting down the program safely...\033[0m")
+    print("\n\033[1mShutting down safely...\033[0m")
     print("\n\033[1;32mThank you!\033[0m")
