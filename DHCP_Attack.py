@@ -1,5 +1,5 @@
-from scapy.all import *
-
+from scapy.all import Ether, IP, UDP, BOOTP, DHCP, sendp, RandMAC, conf
+import os
 
 
 #Chek if the user doesn't run the program with super user privileges
