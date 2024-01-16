@@ -1,18 +1,12 @@
 from scapy.all import Ether, IP, UDP, BOOTP, DHCP, sendp, RandMAC, conf
 import os
-import platform
 
-
-
-# Get the operating system
-os_system = platform.system()
 
 #Check if the user doesn't run the program with super user privileges
-if os_system == "Linux":
-    if os.geteuid() != 0:
-        print("\n=========================================================================\n")
-        print("\033[1;31mAccess denied, you neet ROOT permissions. Try running the program with sudo.\033[0m")
-        exit()
+if os.geteuid() != 0:
+    print("\n=========================================================================\n")
+    print("\033[1;31mAccess denied, you neet ROOT permissions. Try running the program with sudo.\033[0m")
+    exit()
 
 
 #When conf.checkIpaddr the reponse IP isn't checked against sending IP address. Don't need to match.	
