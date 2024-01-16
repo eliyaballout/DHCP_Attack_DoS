@@ -1,6 +1,6 @@
-from sys import platform
 from scapy.all import Ether, IP, UDP, BOOTP, DHCP, sendp, RandMAC, conf
 import os
+import platform
 
 
 
