@@ -4,7 +4,7 @@
 
 ## Introduction
 
-Welcome to DHCP attck program, this program is written in python. <br>
+Welcome to DHCP attack program, this program is written in python. <br>
 This is a basic python code that demonstrates a exhaustion attack or DoS attack.
 Basically, we're going to grab all the IP addresses available from the dhcp server so that the address pool is exhausted and other devices can't access the network, because they can't get an IP address from dhcp server.<br>
 This attack will work on all the clients that are connected to the network no matter if they connected through wireless(WiFi) or Ethernet. <br><br>
