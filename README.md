@@ -39,7 +39,7 @@ In kali linux this library comes pre-installed, but just in case this library is
     ```
     sudo pip install scapy
     ```
-<br><br>
+<br>
 
 
 
