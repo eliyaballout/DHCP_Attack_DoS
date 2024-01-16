@@ -49,8 +49,8 @@ In kali linux this library comes pre-installed, but just in case this library is
 **This program will only work on linux, not Windows.** <br>
 To download the program for all Linux distributions, you have to clone the repo from GitHub:
 ```
-git clone https://github.com/eliyaballout/WiFi_DHCP_Attack_DoS
-cd WiFi_DHCP_Attack_DoS
+git clone https://github.com/eliyaballout/DHCP_Attack_DoS
+cd DHCP_Attack_DoS
 ```
 
 This program needs a root privileges, so run the program with sudo:
