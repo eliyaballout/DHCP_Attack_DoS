@@ -6,7 +6,7 @@
 
 Welcome to DHCP attck program, this program is written in python. <br>
 This is a basic python code that demonstrates a exhaustion attack or DoS attack.
-Basically, we're going to grab all the IP addresses available from a server so that the address pool is exhausted and other devices can't access the network, because they can't get an IP address from dhcp server.<br>
+Basically, we're going to grab all the IP addresses available from the dhcp server so that the address pool is exhausted and other devices can't access the network, because they can't get an IP address from dhcp server.<br>
 This attack will work on all the clients that are connected to the network no matter if they connected through wireless(WiFi) or Ethernet. <br><br>
 
 
@@ -32,7 +32,14 @@ This attack will work on all the clients that are connected to the network no ma
 **Before installing and start using the program, you will have to know some of the requirements that it needs:**
 
 1. **Kali Linux:** The most used OS for hacking and penetration testing is Kali linux. So you need to have kali linux, installed in your computer using VirtualBox or VMware. Or any linux distro you want.<br>
-The advantage of Kali that there are many many tools comes pre-installed.<br><br>
+The advantage of Kali that there are many many tools comes pre-installed.
+
+2. **scapy library:** Scapy is a Python program that enables the user to send, sniff, dissect and forge network packets. This capability allows construction of tools that can probe, scan or attack networks.<br>
+In kali linux this library comes pre-installed, but just in case this library is not installed you can run:
+    ```
+    sudo pip install scapy
+    ```
+<br><br>
 
 
 
